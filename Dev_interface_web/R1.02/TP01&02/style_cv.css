@@ -18,7 +18,7 @@
         }
         h2 {
             text-align: right;
-            color: #1a8200;
+            color:   #1a8200;
             font-size: 170%;
             font-weight: bold;
             font-style: italic;
@@ -26,6 +26,7 @@
         ul {
             list-style-type: square
         }
+        
         a, a:visited {
             color: #8e849d;
             text-decoration: none;
