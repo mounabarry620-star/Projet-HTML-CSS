@@ -1,0 +1,75 @@
+/* Feuille de style du CV de Mamadou_Bailo_Barry */
+
+  * {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        body {
+            width: 70%;
+            margin-left: 15%;
+            background-image: url(gradient.png);
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+        }
+        h1 {
+            text-align: center;
+            color: #302ebb;
+            font-size: 300%;
+            font-weight: normal;
+        }
+        h2 {
+            text-align: right;
+            color: #1a8200;
+            font-size: 170%;
+            font-weight: bold;
+            font-style: italic;
+        }
+        ul {
+            list-style-type: square
+        }
+        a, a:visited {
+            color: #8e849d;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        td.semestre {
+            background-color: #1a8200;
+            color: white;
+            font-size: 120%;
+            font-weight: bold;
+            text-align: center; 
+            font-family: Arial, ;
+        }
+        td.cours {
+            background-color: #e9ec17;
+            font-weight: bold;
+            text-align: center; ;
+        }
+        td.sae {
+            background-color: #d3e719;
+            font-weight: bold;
+            text-align: center; 
+        }
+        .motivation {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #302ebb;
+            background-color: lightgrey;
+            width: 80%;  
+        }
+        div.motivation  {
+          
+                width: 300px;
+                border: 10px solid red;
+                padding: 30px;
+                background-color: lightgray;
+                text-align: justify;
+                text-indent: 30px;
+                margin: 0 auto;
+        }
+        div.motivation p::first-letter {
+           font-weight: bold;
+           font-size: 200%;
+            color: red;
+        }     
