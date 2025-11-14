@@ -9,6 +9,7 @@
             background-image: url(gradient.png);
             background-repeat: repeat-x;
             background-attachment: fixed;
+           
         }
         h1 {
             text-align: center;
@@ -26,7 +27,7 @@
         ul {
             list-style-type: square
         }
-        
+
         a, a:visited {
             color: #8e849d;
             text-decoration: none;
