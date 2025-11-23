@@ -1,84 +1,96 @@
-*{
-  font-family: Tahoma, Geneva, sans-serif;
-  box-sizing: border-box;
+* {
+    font-family: Tahoma, Geneva, sans-serif;
+    box-sizing: border-box;
 }
-  body {
-  background-image: url("background.jpg");
-  background-repeat: repeat-y;
-  background-position: center ;
-}
-  #page {
-  max-width: 900px;
-  margin: auto;
 
-  
+body {
+    background-image: url("background.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
 }
+
+#page {
+    max-width: 900px;
+    margin: auto;
+
+}
+
 p {
     hyphens: auto;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
 
- #banniere {
+#banniere {
     height: 211px;
     background-color: black;
 
 }
-  #banniere_h1 {
+
+#banniere_h1 {
     color: white;
     text-align: center;
     font-size: 200%;
     line-height: 211px;
     margin: 0;
- }
-    #menu, #menu ul {
-    list-style: none ;
-    margin: 0em ;
+}
+
+#menu,
+#menu ul {
+    list-style: none;
+    margin: 0em;
     padding: 0em;
 }
-    #menu li {
+
+#menu li {
     display: inline-block;
-    margin: 0.8em 0.1em ;
+    margin: 0.8em 0.1em;
     position: relative;
-    
+
 }
-    #menu li a {
+
+#menu li a {
     color: black;
     font-weight: bold;
     background-color: yellow;
     text-decoration: none;
     display: inline-block;
-    padding: 5px 33.9px; 
+    padding: 5px 33.9px;
     text-align: center;
-    
+
 }
-    #menu li a:hover {
+
+#menu li a:hover {
     color: white;
     background-color: black;
     text-decoration: underline;
 }
-    #menu  ul {
+
+#menu ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: yellow;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     list-style: none;
     min-width: 150px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
-    #menu li:hover > ul {
+
+#menu li:hover>ul {
     display: block;
 }
-    #menu ul li {
+
+#menu ul li {
     display: block;
     margin: 0;
     width: 100%;
 }
-    #menu ul li a {
+
+#menu ul li a {
     background-color: rgb(16, 216, 216);
     color: black;
     text-decoration: none;
@@ -88,38 +100,47 @@ p {
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
-    #menu ul li a:hover {
+
+#menu ul li a:hover {
     background-color: black;
     color: white;
     text-decoration: underline;
 }
-   menu ul li:last-child a {
+
+menu ul li:last-child a {
     border-bottom: none;
 }
 
-  #conteneur {
-  display: flex;
+#conteneur {
+    display: flex;
 }
-    #section {
-     width: 75%;
+
+#section {
+    width: 75%;
 }
- #auteur {
+
+#auteur {
     width: 23%;
     margin-left: 1em;
     background-color: black;
     color: white;
-}   
-    #article1, #article2 {
+}
+
+#article1,
+#article2 {
     margin-bottom: 1em;
     padding: 1em;
     background-color: white;
-    
+
 }
- #h2 {
+
+#h2 {
     font-size: 160%;
-    
+
 }
-    #article1_header, #article2_header {
+
+#article1_header,
+#article2_header {
     padding: 1em;
     background-color: yellow;
     color: black;
@@ -131,111 +152,133 @@ p {
     margin-right: auto;
 
 }
- #footer1, #footer2 {
+
+#footer1,
+#footer2 {
     padding: 1em;
     background-color: lightgray;
     color: rgb(20, 17, 17);
-    
+
 }
-    #img1, #img2 {
+
+#img1,
+#img2 {
     float: left;
     margin: 1em;
     height: 200px;
 }
-    #img_auteur {
+
+#img_auteur {
     float: left;
     width: 100%;
     margin-bottom: 0.5em;
     margin-top: none;
 }
-    #aside1, #aside2 {
+
+#aside1,
+#aside2 {
     margin-right: 3em;
     margin-left: 3em;
     margin-bottom: 1em;
     margin-top: 1em;
     padding: 1em;
     background-color: white;
-    border: 2px solid yellow;*{
-  font-family: Tahoma, Geneva, sans-serif;
-}
-  body {
-  background-image: url("background.jpg");
-  background-repeat: repeat-y;
-  background-position: center ;
-}
-  #page {
-  width: 900px;
-  margin: auto;
-
-  
+    border: 2px solid yellow;
 }
 
- #banniere {
+* {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+#page {
+    width: 900px;
+    margin: auto;
+
+
+}
+
+#banniere {
     height: 211px;
     background-image: url("banniere.jpg");
 
 }
-  #banniere_h1 {
+
+#banniere_h1 {
     color: white;
     text-align: center;
     font-size: 300%;
     line-height: 211px;
     margin: 0;
- }
-    #menu, #menu ul {
-    list-style: none ;
-    margin: 0em ;
+}
+
+#menu,
+#menu ul {
+    list-style: none;
+    margin: 0em;
     padding: 0em;
 }
-    #menu li {
+
+#menu li {
     display: inline-block;
-    margin: 0.8em 0.1em ;
+    margin: 0.8em 0.1em;
     position: relative;
-    
+
 }
-    #menu li a {
+
+#menu li a {
     color: black;
     font-weight: bold;
     background-color: yellow;
     text-decoration: none;
     display: inline-block;
-    padding: 5px 33.9px; 
+    padding: 5px 33.9px;
     text-align: center;
-    
+
 }
-    #menu li a:hover {
+
+#menu li a:hover {
     color: white;
     background-color: black;
     text-decoration: underline;
 }
-    #menu  ul {
+
+#menu ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: yellow;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     list-style: none;
     min-width: 150px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
-    #menu li:hover > ul {
+
+#menu li:hover>ul {
     display: block;
 }
-    #menu ul li {
+
+#menu ul li {
     display: block;
     margin: 0;
     width: 100%;
 }
+
 .petit_ecran {
     display: none;
-    
+
 
 }
 
-    #menu ul li a {
+#menu ul li a {
     background-color: rgb(16, 216, 216);
     color: black;
     text-decoration: none;
@@ -245,60 +288,76 @@ p {
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
-    #menu ul li a:hover {
+
+#menu ul li a:hover {
     background-color: black;
     color: white;
     text-decoration: underline;
 }
-   menu ul li:last-child a {
+
+menu ul li:last-child a {
     border-bottom: none;
 }
 
-  #conteneur {
-  display: flex;
+#conteneur {
+    display: flex;
 }
-    #section {
-     width: 75%;
+
+#section {
+    width: 75%;
 }
- #auteur {
+
+#auteur {
     width: 23%;
     margin-left: 1em;
     background-color: black;
     color: white;
-}   
-    #article1, #article2 {
+}
+
+#article1,
+#article2 {
     margin-bottom: 1em;
     padding: 1em;
     background-color: white;
-    
+
 }
- #h2 {
+
+#h2 {
     font-size: 160%;
-    
+
 }
-    #article1_header, #article2_header {
+
+#article1_header,
+#article2_header {
     padding: 1em;
     background-color: yellow;
     color: black;
 }
- #footer1, #footer2 {
+
+#footer1,
+#footer2 {
     padding: 1em;
     background-color: lightgray;
     color: rgb(20, 17, 17);
-    
+
 }
-    #img1, #img2 {
+
+#img1,
+#img2 {
     float: left;
     margin: 1em;
     height: 200px;
 }
-    #img_auteur {
+
+#img_auteur {
     float: left;
     width: 100%;
     margin-bottom: 0.5em;
     margin-top: none;
 }
-    #aside1, #aside2 {
+
+#aside1,
+#aside2 {
     margin-right: 3em;
     margin-left: 3em;
     margin-bottom: 1em;
@@ -310,28 +369,20 @@ p {
     font-size: 0.8em;
     clear: both;
 }
-    #infos {
-        font-size: 0.8em;
-        color: white;
-        background-color: black;
 
-    }
- 
-
-
-
-
-    font-style: italic;
+#infos {
     font-size: 0.8em;
-    clear: both;
+    color: white;
+    background-color: black;
+
 }
-    #infos {
-        font-size: 0.8em;
-        color: white;
-        background-color: black;
-
-    }
- 
 
 
 
+
+#infos {
+    font-size: 0.8em;
+    color: white;
+    background-color: black;
+
+}
