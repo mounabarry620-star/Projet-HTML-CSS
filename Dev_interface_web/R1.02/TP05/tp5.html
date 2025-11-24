@@ -8,12 +8,40 @@
   </head>
 
 
+                 <body>
+                             <form method="post" action="traitement.php">
+                                 <fieldset>
+                                   <legend>Identité</legend>
+                                   <label>Entrez votre nom</label> : <input type="text" name="votre_nom" autofocus required size="20" maxlength="50"/> <br>
+                                   <label>Entrez votre prénom</label> : <input type="text" name="votre_prenom" autocomplete="on" required size="20" maxlength="50"/> <br>
+                                   <label>Age</label> : <input type="number" name="votre_age" min="0" max="130"/> <br>
+                                   <label>Nationalité</label> : 
+                                   <select name="pays"> 
+                                        <option value="Allemagne">Allemagne</option>
+                                        <option value="France">France</option>
+                                        <option value="Espagne">Espagne</option>
+                                        <option value="Italie">Italie</option>
+                                        <option value="Autre">Autre</option>
+                                   </select> <br>
+                                 </fieldset>
+                                 <fieldset>
+                                   <legend>Informations personnelles</legend>
+                                   <label>Mot de passe:</label> <input type="password" name="votre_mot_de_passe" required size="10" maxlength="10"/> <br>
+                                   <label>Votre Adresse mail</label><input type="email" name="votre_email" auto required size="40" maxlength="80"/> <br>
+                                   Quelle système d'exploitation utilisez-vous ? <br>
+                                   <input type="radio" name="os" value="Windows" checked/> <label> Windows</label><br>
+                                   <input type="radio" name="os" value="MacOS"/> <label> MacOS</label><br>
+                                   <input type="radio" name="os" value="Linux"/> <label> Linux</label><br>
+                                   <input type="radio" name="os" value="Autre"/> <label> Autre</label><br>
+                                   <label>Veuillez entrez une description de vous-même:</label> <br>
+                                        <textarea lang="en" spellcheck="true" name="description" rows="5" cols="50" maxlength="500"></textarea> <br>
+                                   <label>Choisissez votre couleur favorite :</label> <input type="color" name="couleur_favorite" value="#ffffff"/> <br> 
+                                   <label>Musique favorite :</label> <input type="file" name="fichier" accept="audio/*"/> <br>
+                                   <label>Acceptez vous de recevoir des pubs dans votre boîte mail ?</label> <input type="checkbox" name="recevoir_pubs"/> <br>
+                                 </fieldset>
+                                 <input type="reset" value="Effacer le formulaire"/> 
+                                 <input type="submit" value="Envoyer le formulaire"/>
+                            </form>
+                 </body>
 
-
-
-
-  <body>
-    
-  </body>
-
-</html>
+</html
