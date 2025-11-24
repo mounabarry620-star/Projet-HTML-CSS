@@ -1,6 +1,40 @@
 form {
-    background-color: lightgray;
+    background: lightgray;
     padding: 1em;
-    width: 50%;
+    width: 500px;
     margin: auto;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+input {
+    margin-bottom: 4px;
+}
+input:focus {
+    background-color: lightyellow;
+}
+
+.label_input {
+    display: inline-block;
+    width: 100px;
+    font-size: 0.9em;
+}
+textarea {
+    min-width: 400px;
+    max-width: 400px;
+}
+textarea:focus {
+    background-color: lightyellow;
+}
+fieldset {
+    padding-top: 1em;
+    margin-bottom: 1em;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+legend {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+:required {
+    background-color: #ffcccc;
 }
