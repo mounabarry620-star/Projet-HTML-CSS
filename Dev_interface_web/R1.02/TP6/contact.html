@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="custom.css">
+    <meta charset="UTF-8">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+
+<body>
+ <header>
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+           <h1 class="display-5 fw-bold">Mon premier site bootstrap</h1>
+           <p class="col-md-8 fs-4">Bienvenue sur mon premier site utilisant le framework Bootstrap.</p>
+        </div>
+      </div>
+ </header>
+  <div class="p-5"></div>
+  <div class="row">
+    <nav class="col-sm-3">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="produits.html">Produits</a></li>
+        <li class="nav-item"><a class="nav-link" href="a_propos.html">A propos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="col-sm-9">
+        <h1>Contactez-nous</h1>
+        <article>
+            <h2>Informations de Contact <small>NEW</small></h2>
+            <p class="text-end small">25 novembre 2023</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="text-justify">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article>
+            <h2>Formulaire de Contact <small>NEW</small></h2>
+            <p class="text-end small">26 novembre 2023</p>
+            <form>
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" required>
+                </div>
+                <div class="mb-3">
+                    <label for="prenom" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Adresse email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="type" class="form-label">Type de visiteur</label>
+                    <select class="form-select" id="type" required>
+                        <option value="professionnel">Professionnel</option>
+                        <option value="particulier">Particulier</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="newsletter">
+                    <label class="form-check-label" for="newsletter">J'accepte de recevoir la newsletter</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </article>
+    </section>
+  </div>
+  <footer>
+    <p class="text-center small">&copy; 2025 Mon premier site bootstrap</p>
+  </footer>
+</body>
+</html>
