@@ -3,8 +3,160 @@
 
   <head>
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
+
+
+   <body id="top">
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+           <div class="container-fluid">
+               <a class="navbar-brand" href="#">VisiterArles</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav me-auto">
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Patrimoine
+                           </a>
+                           <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="#">Les arènes</a></li>
+                               <li><a class="dropdown-item" href="#">Le théâtre antique</a></li>
+                               <li><a class="dropdown-item" href="#">Les thermes de Constantin</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Hôtels</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Restaurants</a>
+                       </li>
+                   </ul>
+                   <ul class="navbar-nav">
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><i class="bi bi-person-plus"></i> Inscription</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+
+               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                   <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                   </div>
+                   <div class="carousel-inner">
+                       <div class="carousel-item active">
+                           <img src="arles1.jpg" class="d-block w-100" alt="Arles 1">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h3>Les Arènes d'Arles</h3>
+                               <p>Découvrez les arènes romaines, un amphithéâtre antique encore utilisé pour des spectacles.</p>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <img src="arles2.jpg" class="d-block w-100" alt="Arles 2">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h3>Le Théâtre Antique</h3>
+                               <p>Un théâtre romain datant du Ier siècle, site historique majeur d'Arles.</p>
+                               <a href="../TP6/index.html" class="btn btn-primary">En savoir plus</a>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <img src="arles3.jpg" class="d-block w-100" alt="Arles 3">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h3>Les Thermes de Constantin</h3>
+                               <p>Explorez les anciens thermes romains, un lieu de bain public de l'époque antique.</p>
+                           </div>
+                       </div>
+                       <div class="carousel-item">
+                           <img src="arles4.jpg" class="d-block w-100" alt="Arles 4">
+                           <div class="carousel-caption d-none d-md-block">
+                               <h3>La Cathédrale Saint-Trophime</h3>
+                               <p>Admirez cette cathédrale romane classée au patrimoine mondial de l'UNESCO.</p>
+                               <a href="../TP3/tp3.html" class="btn btn-primary">Visiter</a>
+                           </div>
+                       </div>
+                   </div>
+                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                   </button>
+                   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                   </button>
+               </div>
+
+               <div class="row">
+                   <div class="col-lg-4">
+                       <img src="arles1.jpg" class="rounded-circle mx-auto d-block" width="100" height="100" alt="Arles 1">
+                       <h2>Les Arènes d'Arles</h2>
+                       <p>Découvrez les arènes romaines, un amphithéâtre antique encore utilisé pour des spectacles.</p>
+                       <a href="#" class="btn btn-light"><i class="bi bi-chevron-double-right"></i> Voir le détail</a>
+                   </div>
+                   <div class="col-lg-4">
+                       <img src="arles2.jpg" class="rounded-circle mx-auto d-block" width="100" height="100" alt="Arles 2">
+                       <h2>Le Théâtre Antique</h2>
+                       <p>Un théâtre romain datant du Ier siècle, site historique majeur d'Arles.</p>
+                       <a href="#" class="btn btn-light"><i class="bi bi-chevron-double-right"></i> Voir le détail</a>
+                   </div>
+                   <div class="col-lg-4">
+                       <img src="arles3.jpg" class="rounded-circle mx-auto d-block" width="100" height="100" alt="Arles 3">
+                       <h2>Les Thermes de Constantin</h2>
+                       <p>Explorez les anciens thermes romains, un lieu de bain public de l'époque antique.</p>
+                       <a href="#" class="btn btn-light"><i class="bi bi-chevron-double-right"></i> Voir le détail</a>
+                   </div>
+               </div>
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <img src="arles4.jpg" class="img-fluid" alt="Arles 4">
+                    </div>
+                    <div class="col-md-7">
+                        <h2>La Cathédrale Saint-Trophime</h2>
+                        <p>Admirez cette cathédrale romane classée au patrimoine mondial de l'UNESCO, avec ses magnifiques sculptures et son histoire riche.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h2>Histoire d'Arles</h2>
+                        <p>Arles est une ville antique fondée par les Grecs, puis devenue romaine. Découvrez son patrimoine exceptionnel.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="arles1.jpg" class="img-fluid" alt="Arles 1">
+                    </div>
+                </div>
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <img src="arles3.jpg" class="img-fluid" alt="Arles 3">
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Culture et Art à Arles</h2>
+                        <p>Arles est un haut lieu de la culture avec ses festivals, musées et événements artistiques tout au long de l'année.</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p class="float-end"><a href="#">Retour en haut</a></p>
+                <p>&copy; 2024 Prénom Nom</p>
+            </footer>
+     </body>
+
+</html>
