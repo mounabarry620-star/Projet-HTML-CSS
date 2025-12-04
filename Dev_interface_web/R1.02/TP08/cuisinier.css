@@ -6,7 +6,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
-    background: white;
+    background: rgb(234, 192, 192);
 }
 
 .chef-card:hover {

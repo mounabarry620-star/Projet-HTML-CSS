@@ -1,0 +1,46 @@
+<?php require_once 'config.php'; ?>
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Culinaire - Accueil</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="cuisinier.css">
+    <link rel="stylesheet" href="custom.css">
+
+  </head>
+
+  <body>
+    <header>
+      <h1>Mon Site Culinaire</h1>
+    </header>
+    <nav>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.php">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recettes.php">Recettes <span class="badge bg-primary">6</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="decouvrir.php">Nous découvrir</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Mon Site Culinaire</h1>
+        <p class="lead">Découvrez l'art de la cuisine française avec nos chefs passionnés et nos recettes délicieuses.</p>
+        <a href="decouvrir.php" class="btn btn-info" role="button">Nous découvrir</a>
+      </div>
+    </div>
+    <div class="text-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" ></iframe>
+    </div>
+<footer><p class="text-center small">&copy; 2025 Mon Site Culinaire</p></footer>
+  </body>
+
+</html>
