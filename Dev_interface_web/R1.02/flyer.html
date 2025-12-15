@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyer JPO BUT Informatique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #e2e8f0; /* Fond gris pour la page web */
+        }
+        
+        h1, h2, h3, .title-font {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Simulation d'une feuille A4 pour l'écran */
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 0;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles spécifiques pour l'impression */
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+            }
+            .page {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        .clip-shape {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        
+        .accent-bg {
+            background-color: #0ea5e9; /* Sky 500 - Bleu moderne */
+        }
+        .accent-text {
+            color: #0284c7; /* Sky 600 */
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen py-8">
+
+    <!-- Boutons d'action (ne s'impriment pas) -->
+    <div class="no-print mb-6 flex gap-4">
+        <button onclick="window.print()" class="bg-slate-800 text-white px-6 py-2 rounded-lg font-semibold hover:bg-slate-700 transition shadow-lg flex items-center gap-2">
+            <i class="fas fa-print"></i> Imprimer / Sauvegarder en PDF
+        </button>
+        <div class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg text-sm flex items-center border border-yellow-200">
+            <i class="fas fa-info-circle mr-2"></i> Pour un PNG : Faites une capture d'écran de la page ci-dessous.
+        </div>
+    </div>
+
+    <!-- Début du Flyer (Format A4) -->
+    <div class="page">
+        
+        <!-- En-tête avec Image et Titres -->
+        <header class="relative bg-slate-900 text-white pb-12 clip-shape">
+            <!-- Image de fond avec overlay -->
+            <div class="absolute inset-0 opacity-20">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80" alt="Background Tech" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="relative z-10 px-12 pt-10">
+                <!-- Logos -->
+                <div class="flex justify-between items-center mb-6">
+                    <div class="bg-white/90 p-2 rounded w-32 h-16 flex items-center justify-center text-slate-800 font-bold text-xs text-center border-l-4 border-sky-500">
+                        LOGO<br>UNIVERSITÉ
+                    </div>
+                    <div class="bg-white/90 p-2 rounded w-32 h-16 flex items-center justify-center text-slate-800 font-bold text-xs text-center border-r-4 border-sky-500">
+                        LOGO<br>IUT
+                    </div>
+                </div>
+
+                <!-- Titres -->
+                <div class="text-center">
+                    <h2 class="text-sky-400 font-bold tracking-widest uppercase text-sm mb-2">Journée Portes Ouvertes</h2>
+                    <h1 class="text-5xl font-extrabold mb-4">BUT INFORMATIQUE</h1>
+                    <p class="text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+                        Découvrez le Bachelor Universitaire de Technologie en Informatique : <br>
+                        <span class="font-semibold text-white">3 ans entre théorie, pratique et expérience professionnelle.</span>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenu Principal -->
+        <main class="flex-grow px-12 py-4 flex flex-col gap-6">
+
+            <!-- Section 1: Le Diplôme & Ambiance (Grid 2 colonnes) -->
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Bloc BUT -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600">
+                            <i class="fas fa-graduation-cap text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800">Le BUT Informatique</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-sky-500 mt-1"></i>
+                            <span>Bachelor Universitaire de Technologie (Grade de Licence, 3 ans).</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-sky-500 mt-1"></i>
+                            <span>Formation professionnalisante : Cours magistraux, TD et TP.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-sky-500 mt-1"></i>
+                            <span>Nombreux projets et stages dès la 2ᵉ année.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bloc Ambiance -->
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
+                            <i class="fas fa-users text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800">Ambiance & Pédagogie</h3>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-heart text-orange-500 mt-1"></i>
+                            <span>Entraide et collaboration étudiante.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-chalkboard-teacher text-orange-500 mt-1"></i>
+                            <span>Enseignants disponibles et à l'écoute.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-bolt text-orange-500 mt-1"></i>
+                            <span>Pédagogie dynamique : théorie et pratique.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 2: Visuel central + Compétences -->
+            <div class="grid grid-cols-12 gap-8 items-stretch">
+                <!-- Image centrale -->
+                <div class="col-span-5 relative rounded-2xl overflow-hidden shadow-lg min-h-[200px]">
+                     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Étudiants en groupe" class="absolute inset-0 w-full h-full object-cover">
+                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                         <p class="text-white font-semibold text-sm">Projets en équipe</p>
+                     </div>
+                </div>
+
+                <!-- Compétences -->
+                <div class="col-span-7 flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                        <i class="fas fa-layer-group text-sky-600"></i> Compétences Clés
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-sky-500">
+                            <i class="fas fa-laptop-code text-sky-600 mb-1"></i>
+                            <h4 class="font-bold text-slate-700 text-sm">Développement</h4>
+                            <p class="text-xs text-slate-500">Conception & validation d'applications.</p>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                            <i class="fas fa-database text-emerald-600 mb-1"></i>
+                            <h4 class="font-bold text-slate-700 text-sm">Données</h4>
+                            <p class="text-xs text-slate-500">Gestion & exploitation de bases de données.</p>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-indigo-500">
+                            <i class="fas fa-network-wired text-indigo-600 mb-1"></i>
+                            <h4 class="font-bold text-slate-700 text-sm">Réseaux</h4>
+                            <p class="text-xs text-slate-500">Déploiement sécurisé & communicant.</p>
+                        </div>
+                        <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-purple-500">
+                            <i class="fas fa-tasks text-purple-600 mb-1"></i>
+                            <h4 class="font-bold text-slate-700 text-sm">Management</h4>
+                            <p class="text-xs text-slate-500">Intégration SI & gestion de projet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Débouchés -->
+            <div class="bg-slate-800 text-white rounded-xl p-5 shadow-lg flex items-center justify-between">
+                <div>
+                    <h3 class="text-lg font-bold mb-1 text-sky-300">Et après ?</h3>
+                    <p class="text-sm text-slate-300">Poursuite en Master, École d'ingénieurs ou insertion pro immédiate.</p>
+                </div>
+                <div class="h-10 w-px bg-slate-600 mx-4"></div>
+                <div class="text-right">
+                    <div class="flex gap-4 text-xs font-semibold">
+                        <span class="bg-slate-700 px-3 py-1 rounded-full">Dev Logiciel</span>
+                        <span class="bg-slate-700 px-3 py-1 rounded-full">Chef de Projet</span>
+                        <span class="bg-slate-700 px-3 py-1 rounded-full">Data Admin</span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer / Zone JPO -->
+        <footer class="bg-sky-600 text-white mt-auto">
+            <div class="px-12 py-8 grid grid-cols-12 gap-8 items-center">
+                
+                <!-- Info JPO -->
+                <div class="col-span-8">
+                    <h2 class="text-3xl font-extrabold mb-4 flex items-center gap-3">
+                        <i class="far fa-calendar-alt"></i> VENEZ NOUS RENCONTRER !
+                    </h2>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <ul class="space-y-1">
+                            <li><i class="fas fa-door-open mr-2 opacity-80"></i> Visite des salles TP & espaces projets</li>
+                            <li><i class="fas fa-comments mr-2 opacity-80"></i> Échanges avec étudiants et profs</li>
+                        </ul>
+                        <ul class="space-y-1">
+                            <li><i class="fas fa-project-diagram mr-2 opacity-80"></i> Démos de projets étudiants</li>
+                            <li><i class="fas fa-briefcase mr-2 opacity-80"></i> Info stages et alternance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bloc Date / Lieu / QR -->
+                <div class="col-span-4 bg-white text-slate-800 p-4 rounded-xl shadow-2xl transform -translate-y-4 border-b-4 border-slate-800">
+                    <div class="text-center mb-3">
+                        <p class="text-xs font-bold text-slate-500 uppercase">Prochaine date</p>
+                        <p class="text-xl font-black text-sky-600">SAMEDI 10 FÉVRIER</p>
+                        <p class="text-sm font-semibold">09h00 - 17h00</p>
+                    </div>
+                    
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-3">
+                        <!-- QR Code Simulé -->
+                        <div class="bg-slate-800 w-16 h-16 flex-shrink-0 flex items-center justify-center text-white text-xs text-center p-1">
+                            QR CODE<br>ICI
+                        </div>
+                        <div class="text-xs leading-tight">
+                            <p class="font-bold">IUT de [Ville]</p>
+                            <p class="text-slate-500">Campus Universitaire</p>
+                            <p class="text-slate-500">123 Rue de la Tech</p>
+                            <p class="text-sky-600 font-bold mt-1">www.iut-info.fr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bas de page -->
+            <div class="bg-sky-700 text-center py-2 text-[10px] text-sky-200 uppercase tracking-widest">
+                Rejoignez les experts du numérique de demain
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
